@@ -10,11 +10,20 @@ h2, h3 {
   font-weight: lighter;
 }
 body { 
-  margin: 2em; 
+  background: rgba(0,0,0,.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 body, input[text], button { 
   color: #888; 
   font-family: Cambria, Georgia; 
+}
+#content {
+    background: white;
+    padding: 24px;
+    width: 80%;
+    max-height: 90%;
 }
 a {
   cursor: pointer;

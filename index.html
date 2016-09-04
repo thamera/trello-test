@@ -3,7 +3,10 @@
     <title>Angular 2 QuickStart</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://trello.com/power-ups/power-up.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://trello.com/power-ups/power-up.min.js"></script>
+    <script src="http://localhost:64187/app/scripts/trello-overlay.js"></script>
 
     <!-- Polyfill(s) for older browsers -->
     <script src="node_modules/core-js/client/shim.min.js"></script>
@@ -14,11 +17,30 @@
 
     <script src="systemjs.config.js"></script>
     <script>
-      System.import('app').catch(function(err){ console.error(err); });
+        System.import('app').catch(function (err) { console.error(err); });
     </script>
 </head>
 
 <body>
-    <Trello-4-Impl>Loading...</Trello-4-Impl>
+    <div id="content">
+        <header class="">
+            <div class="container">
+                <div class="row spacer">
+                    <div class="col-md-12">
+                        <button title="Click to view main menu" type="button" aside-menu-toggle="right-menu" class="navbar-toggle collapsed" ng-class="{'nav-open': vm.opened}">
+                            <div class="nav-bars">
+                                <i class="glyphicon glyphicon-menu-hamburger"></i>
+                            </div>
+                            <div class="nav-back">
+                                <i class="glyphicon glyphicon-arrow-right"></i>
+                            </div>
+                        </button>
+                        <div class="app-title"><img class="pull-left" src="img/pci48.png" /><h2>{{vm.title}}</h2></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <Trello-4-Impl>Loading...</Trello-4-Impl>
+    </div>
 </body>
 </html>
