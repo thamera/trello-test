@@ -11,11 +11,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
+        this.title = 'Trello for Implementations';
+        this.isCollapsed = true;
+        console.dir(t);
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'Trello-4-Impl',
-            template: '<h1>Trello For Implementation Projects</h1>'
+            templateUrl: 'app/app.component.html',
+            styleUrls: ['app/app.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

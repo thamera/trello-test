@@ -25,3 +25,5 @@ document.addEventListener('keyup', function (e) {
         t.closeOverlay().done();
     }
 });
+
+console.dir(t);
